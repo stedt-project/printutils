@@ -1,6 +1,7 @@
 STEDT printutils
 ================
 
+```
 This file contains notes on the tools used for generating the Dictionary & Thesaurus.
 
 Requirements:
@@ -27,3 +28,4 @@ Primary tools:
 	disExperiment1/makeFascOnly.sh: takes 'V F C' argument (V=volume, F=fascicle, C=chapter) and generates draft fascicle pdf in disExperiment1/tex/
 	disExperiment1/shebang.sh: generates entire D-T in disExperiment1/tex/ (but doesn't run makeRefs.sh)
 	nightlyShebang.sh: generates entire D-T (edit file to set location for pdf file)
+```
