@@ -4,7 +4,8 @@ date
 set verbose
 DATE=`date "+%Y-%m-%d"`
 cd ~/printutils
-svn up
+git pull -v
+# was: svn up
 #
 rm ~/printutils/disExperiment1/tex/*
 cd ~/printutils/bib
