@@ -1,0 +1,45 @@
+\vspace{1em}
+\fancyhead[RO]{\Large{[% semkey %]  [% title %]} \vspace{0.5em}}
+{\LARGE \parindent=-1em \textbf{[% semkey %]  [% title %]}}
+\addcontentsline{toc}{chapter}{[% semkey %]  [% title %]}
+% \nopagebreak
+[% # semantic flowchart %][% FOREACH id IN flowchartids -%]
+\begin{figure}[H]
+\begin{center}
+\includegraphics[max width=\columnwidth]{../../pdf/[% id %].pdf}
+\label{fig:[% id %] [% semkey %] [% title %]}
+\caption{[% semkey %] \textit{[% title %]}}
+\end{center}
+\end{figure}
+
+[% END -%]\vspace{0.25em}
+[% # general discussion == chapter notes %]
+[% FOREACH note IN chapter_notes -%]
+\par
+[% note %]
+[% END -%]% \nopagebreak
+[% # insert actual content %]
+[% FOREACH etyma -%]
+[% IF subseq != '' %]
+\needspace{5\baselineskip}\subsection[([% seq %][% subseq %]) [% plg %] [% protoform_text %] [% protogloss %]]{([% seq %][% subseq %]) [% plg %] [% protoform %] [% protogloss %]}
+[% ELSE %]
+\needspace{5\baselineskip}\section[([% seq %]) [% plg %] [% protoform_text %] [% protogloss %]]{([% seq %]) [% plg %] [% protoform %] [% protogloss %]}
+[% END %]
+[% FOREACH notes -%]
+[% IF type == 'I' %]{{[Internal Note:]}} \textit{[% END -%]
+[% IF type == 'O' && internal_notes %][Orig/Source][% END -%]
+\par
+[% text -%]
+[% IF type == 'I' %]}[% END %]
+[% END %]
+
+[% IF records %][% records %][% END -%]
+[% IF comparanda.size -%]
+[% label = 'Chinese comparand' _ (comparanda.size == 1 ? 'um' : 'a') -%]
+\comparandum[\textit{[% label %]}]{[% label %]}
+[% END %]
+[% FOREACH note IN comparanda -%]
+\par
+[% note %]
+[% END -%]
+[% END %]

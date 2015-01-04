@@ -1,0 +1,55 @@
+\contentsline {chapter}{Preface}{vi}{chapter*.4}
+\contentsline {chapter}{Introduction}{vii}{chapter*.5}
+\contentsline {section}{History of the STEDT Project}{vii}{section*.6}
+\contentsline {section}{Original Plan of STEDT}{ix}{section*.7}
+\contentsline {section}{The ST/TB Family in its Areal Context}{x}{section*.8}
+\contentsline {subsection}{Typological diversity of TB: Indosphere and Sinosphere}{x}{subsection*.9}
+\contentsline {subsection}{Scope and subgrouping of the TB family}{xi}{subsection*.10}
+\contentsline {subsection}{Evolving notions of ST/TB subgrouping}{xii}{subsection*.11}
+\contentsline {subsubsection}{Most recent subgrouping schema}{xiii}{subsubsection*.12}
+\contentsline {subsection}{Teleo- and meso-reconstruction}{xiv}{subsection*.13}
+\contentsline {subsection}{The problem of nomenclature}{xvi}{subsection*.14}
+\contentsline {section}{Special Challenges for ST/Eytmologization}{xvii}{section*.15}
+\contentsline {section}{Phonological System of Proto-Tibeto-Burman}{xviii}{section*.16}
+\contentsline {section}{Organization of the Etymologies}{xix}{section*.17}
+\contentsline {subsection}{The “tagging” process}{xix}{subsection*.18}
+\contentsline {subsection}{Supporting forms and their attribution}{xx}{subsection*.19}
+\contentsline {subsubsection}{Written Tibetan}{xx}{subsubsection*.20}
+\contentsline {subsubsection}{Written Burmese}{xx}{subsubsection*.21}
+\contentsline {subsubsection}{Jingpho}{xxi}{subsubsection*.22}
+\contentsline {subsubsection}{Chinese}{xxi}{subsubsection*.23}
+\contentsline {subsection}{Glosses of the supporting forms}{xxi}{subsection*.24}
+\contentsline {subsection}{Notes}{xxi}{subsection*.25}
+\contentsline {subsection}{Chinese comparanda}{xxii}{subsection*.26}
+\contentsline {subsection}{Treatment of loanwords}{xxii}{subsection*.27}
+\contentsline {section}{The Representation of Semantic Associations}{xxiii}{section*.28}
+\contentsline {subsection}{Regularity and variation}{xxv}{subsection*.29}
+\contentsline {subsection}{Notational conventions and pan-allofamic formulas}{xxvi}{subsection*.30}
+\contentsline {subsection}{Parallel but surprising examples}{xxvii}{subsection*.31}
+\contentsline {subsection}{Notational conventions with respect to variation}{xxviii}{subsection*.32}
+\contentsline {subsection}{Similarities and differences between Tibeto-Burman and Indo-European patterns of variation}{xxix}{subsection*.33}
+\contentsline {subsubsection}{Prefixal variation}{xxix}{subsubsection*.34}
+\contentsline {subsubsection}{Manner of articulation of the root-initial}{xxix}{subsubsection*.35}
+\contentsline {subsubsection}{Alternation between initial labial stop and w-}{xxix}{subsubsection*.36}
+\contentsline {subsubsection}{Vocalic alternations}{xxix}{subsubsection*.37}
+\contentsline {subsubsection}{Variation between homorganic final stops and nasals}{xxx}{subsubsection*.38}
+\contentsline {subsubsection}{Tonal variations}{xxx}{subsubsection*.39}
+\contentsline {subsubsection}{Root extensions/augments in final position}{xxx}{subsubsection*.40}
+\contentsline {subsection}{More on the concept of word family: blood relatives vs.\ adoptive ones}{xxx}{subsection*.41}
+\contentsline {subsection}{Etymological accuracy and rectification of possible errors}{xxx}{subsection*.42}
+\contentsline {subsubsection}{Treating a loanword as native}{xxx}{subsubsection*.43}
+\contentsline {subsubsection}{Combining reflexes of unrelated roots}{xxxi}{subsubsection*.44}
+\contentsline {subsubsection}{Failure to recognize that separately reconstructed etyma are really co-allofams}{xxxi}{subsubsection*.45}
+\contentsline {subsubsection}{Double-dipping}{xxxi}{subsubsection*.46}
+\contentsline {subsubsection}{Misanalyses of compounds}{xxxi}{subsubsection*.47}
+\contentsline {subsection}{Desiderata for the future}{xxxii}{subsection*.48}
+\contentsline {chapter}{Acknowledgments}{xl}{chapter*.49}
+\contentsline {section}{NSF and NEH Support}{xl}{section*.50}
+\contentsline {section}{Administrators}{xl}{section*.51}
+\contentsline {section}{Contributors}{xl}{section*.52}
+\contentsline {section}{STEDTniks}{xlii}{section*.53}
+\contentsline {section}{Complete List of STEDTniks}{xliv}{section*.55}
+\contentsline {section}{Visiting Scholars}{xlvi}{section*.54}
+\contentsline {chapter}{Conventions}{xlvii}{chapter*.56}
+\contentsline {part}{References}{1}{chapter*.57}
+\contentsline {part}{List of Languages}{3}{section*.58}
