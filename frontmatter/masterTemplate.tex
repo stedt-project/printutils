@@ -116,7 +116,6 @@
 \titleformat{\chapter}[hang]{\Large\bfseries}{\thechapter}{0pt}{\Large\bfseries}
 
 \pagestyle{fancy}
- 
 \fancyhead{}
 
 \renewcommand*{\sectionmark}[1]{ \markright{#1} }
@@ -194,11 +193,15 @@
 
 \pdfbookmark[0]{Table of Contents}{TOC}
 \tableofcontents
-\clearpage
+\cleardoublepage
 
-\include{epigraph}
+\onecolumn
+\pagestyle{empty}
+\input{epigraph}
+\twocolumn
 
-\clearpage
+\cleardoublepage
+\pagestyle{fancy}
 
 \include{preface}
 \include{introduction}
@@ -206,7 +209,6 @@
 \include{terminology}
 
 \cleardoublepage
-
 \mainmatter
 \pdfbookmark[0]{The Dictionary-Thesaurus}{TOC}
 
@@ -219,7 +221,6 @@
 %%%% [% END -%]
 
 \cleardoublepage
-
 \backmatter
 \fancyhead[LE]{\Large{References} \vspace{0.5em}}
 \fancyhead[RO]{\Large{References} \vspace{0.5em}}
