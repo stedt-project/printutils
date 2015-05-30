@@ -3,6 +3,10 @@ if [ "$1" = '1col' ] ; then
 perl -i -pe 's/\\documentclass\[11pt,/\% \\documentclass[11pt,/'  frontmatter$1.tex
 perl -i -pe 's/\% \\documentclass\[11pt\]/\\documentclass[11pt]/'  frontmatter$1.tex
 perl -i -ne 'next if /^\\(one|two)column/; print'  frontmatter$1.tex
+# skip the half-title for 1col
+perl -i -ne 'next if /halftitle/; print'  frontmatter$1.tex
+# skip the list of languages
+perl -i -pe 's/^/% / if /(List of Languages|lglist)/' frontmatter$1.tex
 #
 perl -i -pe 's/^(.geometry)/% \1/' frontmatter$1.tex
 perl -i -pe 's/paperwidth.17in./paperwidth{8.5in}/' frontmatter$1.tex
@@ -16,8 +20,8 @@ fi
 cp *.tex ../disExperiment1/tex
 cd ../disExperiment1/tex
 rm *.toc *.aux *.bbl *.blg *.log *.out
-xelatex frontmatter$1.tex
-bibtex frontmatter$1.aux
-xelatex frontmatter$1.tex
-xelatex frontmatter$1.tex
-xelatex frontmatter$1.tex
+xelatex frontmatter$1
+bibtex frontmatter$1
+xelatex frontmatter$1
+xelatex frontmatter$1
+xelatex frontmatter$1
