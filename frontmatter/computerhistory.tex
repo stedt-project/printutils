@@ -22,8 +22,7 @@ catch up as the technology ``took off''.
 
 \section{A Timeline}
 
-In 1987, when the STEDT project started, there was no world
-wide web. (There was, of course, an internet, but it was restricted to
+In 1987, when the STEDT project started, there was no World Wide Web. (There was, of course, an internet, but it was restricted to
 the military and a few academic institutions.) Only mainframe
 computers were connected to each other via networks, and very few
 people used email.  Most people used a device called a ``modem'' to ``dial up'' via a
@@ -57,13 +56,13 @@ that effort began.  The first bitmap version of
 the STEDT font was created, and data was entered into HyperCard\texttrademark stacks.
 \footnote{HyperCard was supposed to create a revolution in software
   development, making it possible for ordinary mortals to write their
-  own highly interactive applications.}  The project had 3 Mac Pluses\texttrademark, each with a 40MB hard
+  own highly interactive applications.}  The project had three Mac Pluses\texttrademark, each with a 40MB hard
 disk, the maximum possible at that time.  Since there was no
 centralized database, software was developed to export the data from the Stacks
 into delimited text files which could be combined and sorted into
 larger aggregations.
 
-By 1989, a software suite existed, written in Spitbol \footnote{A
+By 1989, an initial version of a publishing suite was completed, written in Spitbol \footnote{A
   dialect of SNOBOL IV.}, which read the delimited files, sorted the
 data (internally), and output ``camera-ready copy'' in
 RTF\footnote{Rich Text Format, Microsoft's\texttrademark proprietary markup
@@ -133,7 +132,7 @@ users to access and update the database at the same time.
 By 1996, the database had migrated to another database platform,
 FileMaker Pro\texttrademark, which had become a popular and flexible system for work
 of this sort.   This new technology made it possible to incorporate
-data from other database (i.e. FileMaker Pro files) and from other
+data from other database (i.e. other FileMaker Pro files) and from other
 sources (e.g. images). An elaborate system of linked databases (called
 ``Ancillary databases'') was produced and operated for some time for
 the benefit of the STEDT staff and visitors. However, the system was
@@ -142,9 +141,9 @@ their early and preliminary state. This version remains as a ``legacy
 document'' awaiting the attention of a future generation who may wish
 to resurrect it from its ashes.
 
-With the advent of the World Wide Web, it became clear that
+With the advent of the World Wide Web at about this time, it became clear that
 the STEDT database would eventually need to be available to the world,
-and besides, the FileMaker version (absent further programming) was
+and besides the FileMaker version (absent further programming) was
 limited to use in the office; the idea of ``web access'' was very
 appealing, as it opened the possibility of having the process of {\it etymologization}
 opened up to collaborators all over the world.
@@ -153,8 +152,9 @@ Therefore, at the beginning of the 21st century, an effort was made to
 migrate the data and software to its current implementation as a
 web-based application backed by a powerful database system.  Several
 software development iterations (some still operational on the STEDT
-website and available in GitHub\footnote{http://github.com/stedtproject} ) were developed.   
-The current online application and publication tools are written in PERL,
+website and available in GitHub\footnote{https://github.com/stedt-project} ) were developed.   
+The current online application and publication tools are written in
+PERL, using the {\it CGI::Application framework}.\footnote{http://search.cpan.org/~markstos/CGI-Application-4.50/lib/CGI/Application.pm}
 and run on a so-called ``LAMP stack".\footnote{Linux, Apache, MySQL, Perl.}
 
 Today, the STEDT database is freely searchable by anyone anywhere who has
@@ -163,7 +163,7 @@ In addition, the database itself and
 the software used to create the etymological structure and generate
 the ``final PDF'' is available as opensource software and open data for the world to
 use.\footnote{In a self-referential, or ``meta'' sort of way, it is
-  possible to include a link to this {\it final PDF} in this PDF, or
+  possible to include a link to this {\it final PDF} both in this PDF and
   its printed equivalent, whichever you happen to be reading. The
   link, which will hopefully endure for some time to come is: http://stedt.berkeley.edu/dissemination/stedt.pdf}
 
@@ -184,7 +184,7 @@ be designed and implemented.
 At first, i.e. for the first couple of decades of the project, the
 database served the needs of the goal of publishing a
 thesaurus. Indeed, to this day, the thesaurus remains the primary
-deliverable -- the database and its accoutrements are secondary.
+deliverable -- the database and its {\it accoutrement}s are secondary.
 
 Analyzing the tasks, we noted that producing the dictionary entailed completing at least the following
 subtasks:
@@ -226,7 +226,7 @@ Requirements:
 
 \subsection{Production of the final ``camera-ready" Dictionary-Thesaurus}
 
-The layout of the printed D-T has changed little since it was first conceived of in 1987: Etyma are sequenced within a semantic hierarchy by phonological form and solidity of attestation.  Under each etymon, the supporting forms are listed by language subgroup; within subgroup the forms are ordered by language name and then by gloss.  This is implemented conceptually via a five-level sort key (semantic node, etyma sequence, language subgroup, language name, gloss) associated with each supporting form.   The first version of the D-T was produced by a SPITBOL program which produced MS Word RTF files. These files were edited by hand to include the front and back matter, and to generate a table of contents. The latest and final version of the D-T is generated by a PERL script which extracts sorted data from the database and outputs a series of LaTeX files which are concatenated with front and back matter content to produce a ``master document".  This file is compiled using various LaTeX facilities to produce the table of contents, include the graphic components (mostly semantic flowcharts), the bibliography, and the backmatter indexes.  The process is now fully automatic: a new updated version of the D-T in PDF format is produced nightly. This large document (over 1,000 11"x17" folio-sized pages) can be downloaded and examined at any time.  The nightly file contains the latest database updates and any changes to the front and back matter text that have been checked in to the repository. Thus, the process of producing final camera ready copy is really simply a matter of choosing which nightly version to designate as the final D-T.
+The layout of the printed D-T has changed little since it was first conceived of in 1987: Etyma are sequenced within a semantic hierarchy by phonological form and solidity of attestation.  Under each etymon, the supporting forms are listed by language subgroup; within subgroup the forms are ordered by language name and then by gloss.  This is implemented conceptually via a five-level sort key (semantic node, etyma sequence, language subgroup, language name, gloss) associated with each supporting form.   The first version of the D-T was produced by a SPITBOL program which produced MS Word RTF files. These files were edited by hand to include the front and back matter, and to generate a table of contents. The latest and final version of the D-T is generated by a PERL script which extracts sorted data from the database and outputs a series of \LaTeX\  files which are concatenated with front and back matter content to produce a ``master document".  This file is compiled using various \LaTeX\  facilities to produce the table of contents, include the graphic components (mostly semantic flowcharts), the bibliography, and the backmatter indexes.  The process is now fully automatic: a new updated version of the D-T in PDF format is produced nightly. This large document (1,126 11"x17" folio-sized pages) can be downloaded and examined at any time.  The nightly file contains the latest database updates and any changes to the front and back matter text that have been checked in to the repository. Thus, the process of producing final camera ready copy is really simply a matter of choosing which nightly version to designate as the final D-T.
 A somewhat simplified example of a single cognate set is shown in
 Figure 5 below. Note the following significant details of the
 arrangement:
@@ -242,4 +242,4 @@ arrangement:
 \item  The source of every form cited is included alongside the
 form. This is a novel feature of the D-T.
 \end{itemize}
-As originally conceived, the D-T was to be published as a conventional printed reference work, probably as part of the linguistic series managed the the UC Press.  However, times have changed and the demand for a printed work has diminished; the substantial cost of publishing a work of this sort is now deemed unnecessary: the PDF will be made available publicly, and a few ``reference copies" of the two tome set will be produced for depository libraries, the Library of Congress and a few other interested parties.  The bindery at the UC Berkeley Library has agreed to produce these tomes from the generated PDF at cost, provided a handsome imitation leather cover and a hand-stitched binding.
+As originally conceived, the D-T was to be published as a conventional printed reference work, probably as part of the linguistic series managed by the UC Press.  However, times have changed and the demand for a printed work has diminished; the substantial cost of publishing a work of this sort is now deemed unnecessary: the PDF will be made available publicly, and a few ``reference copies" of the two tome set will be produced for depository libraries, the Library of Congress and a few other interested parties.  The bindery at the UC Berkeley Library has agreed to produce these tomes from the generated PDF at cost, provided a handsome imitation leather cover and a hand-stitched binding.
