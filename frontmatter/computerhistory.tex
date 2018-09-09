@@ -10,7 +10,7 @@
 \section{Overview}
 
 The STEDT project spanned a revolutionary period in computer
-technology -- from 1987, when (compared to today) very little was possible, and what was
+technology---from 1987, when (compared to today) very little was possible, and what was
 possible normally required a substantial programming team with lots of
 experience, to the present, 2015, when everyone is expected to use
 computerized devices of several sorts, and  ``collaboration'' and ``data
@@ -38,8 +38,8 @@ nor was it possible to attach a document to an email (one
 could, however, ``FTP''\footnote{File Transfer Protocol, RFC114, http://tools.ietf.org/html/rfc114} a file 
 from one computer to another, provided the proper software was installed on both sides).
 
-``Microcomputers'', however, did exist, and were becoming ubiquitous -- the IBM PC was becoming standard
-office equipment, and the Apple Macintosh\texttrademark had been invented
+``Microcomputers'', however, did exist, and were becoming ubiquitous---the IBM PC was becoming standard
+office equipment, and the Apple Macintosh\texttrademark\ had been invented
 a few years previously to replace the Apple II and its variations.  
 Indeed, the Mac incorporated new-fangled features such
 as a {\it mouse}, {\it windows} (movable, resizable ``windows'' on the
@@ -53,8 +53,8 @@ dated. http://en.wikipedia.org/wiki/Word\_processor}
 Against this backdrop, the design of a system to create 
 the Dictionary-Thesaurus and the gathering and inputting of data supporting
 that effort began.  The first bitmap version of
-the STEDT font was created, and data was entered into HyperCard\texttrademark stacks.
-\footnote{HyperCard was supposed to create a revolution in software
+the STEDT font was created, and data was entered into HyperCard\texttrademark\
+stacks.\footnote{HyperCard was supposed to create a revolution in software
   development, making it possible for ordinary mortals to write their
   own highly interactive applications.}  The project had three Mac Pluses\texttrademark, each with a 40MB hard
 disk, the maximum possible at that time.  Since there was no
@@ -62,17 +62,17 @@ centralized database, software was developed to export the data from the Stacks
 into delimited text files which could be combined and sorted into
 larger aggregations.
 
-By 1989, an initial version of a publishing suite was completed, written in Spitbol \footnote{A
+By 1989, an initial version of a publishing suite was completed, written in Spitbol\footnote{A
   dialect of SNOBOL IV.}, which read the delimited files, sorted the
 data (internally), and output ``camera-ready copy'' in
-RTF\footnote{Rich Text Format, Microsoft's\texttrademark proprietary markup
-  language}.   In addition, a TrueType\texttrademark version of the STEDT font
+RTF\footnote{Rich Text Format, Microsoft's\texttrademark\ proprietary markup
+  language}.   In addition, a TrueType\texttrademark\ version of the STEDT font
 had been created, enabling the publication of handsome dictionary
-pages on the project's newly-acquired PostScript\texttrademark printer, a
+pages on the project's newly-acquired PostScript\texttrademark\ printer, a
 LaserWriter\texttrademark.\footnote{Contrast the progression of the
   STEDT project with the development of another similar, but smaller
   effort, the effort to produce the {\it Dictionary of Lahu}. This was
-  an early computational lexicographic project of some complexity -- a custom
+  an early computational lexicographic project of some complexity---a custom
   font was designed, as well as custom tools for formatting the final
   copy that was reproduced electrographically by UC Press.  The effort
   is handsomely documented in DL and in its derivative the {\it English-Lahu Lexicon}.}
@@ -95,27 +95,27 @@ steps, culminating with a final marked-up document (in this case in
 RTF), ready for printing.  
 
 Several ``microcomputer database systems'' became available around this
-time. Previous incarnations of these software components (e.g. DBASE\texttrademark) were clunky
+time. Previous incarnations of these software components (e.g.\ DBASE\texttrademark) were clunky
 and often had restrictions on their ability to handle linguistic data
 (as opposed to accounting data).
 They handled only short, fixed-length fields, and balked at ``special characters''.
 
 By 1992, STEDT data had been loaded into FoxPro\texttrademark, one of the leading
-database systems at that time -- essentially a rewrite of DBASE,
+database systems at that time---essentially a rewrite of DBASE,
 without its many shortcomings, fully relational, with lots of features.
 The relational table structure still in use today
 was implemented (see Figure~\ref{fig:foxpro}); and the first
 ``reports'' which allowed users to
 browse the growing database were created.  The hardware too was
 improving.
-Much faster computers with larger hard disks (e.g. the
+Much faster computers with larger hard disks (e.g.\ the
 Apple Quadra\texttrademark) were now connected to each other by Ethernet
 cables, and multiple users were able to access the database at the
 same time.  A client-server architecture was possible for the first
 time.  The ``draft fascicles'' became at this point a type of report
 produced by using the database reporting facilities available. While the
 reports lacked some of the fine details desired, nay required, for
-final publication (e.g. nice footnotes, and inline formatting), the
+final publication (e.g.\ nice footnotes, and inline formatting), the
 situation had been infinitely improved by the ability to ``push a
 button'' to produce these documents, and the ability for multiple
 users to access and update the database at the same time.
@@ -132,8 +132,8 @@ users to access and update the database at the same time.
 By 1996, the database had migrated to another database platform,
 FileMaker Pro\texttrademark, which had become a popular and flexible system for work
 of this sort.   This new technology made it possible to incorporate
-data from other database (i.e. other FileMaker Pro files) and from other
-sources (e.g. images). An elaborate system of linked databases (called
+data from other database (i.e.\ other FileMaker Pro files) and from other
+sources (e.g.\ images). An elaborate system of linked databases (called
 ``Ancillary databases'') was produced and operated for some time for
 the benefit of the STEDT staff and visitors. However, the system was
 never very portable, nor was there a desire to publish these data in
@@ -152,13 +152,13 @@ Therefore, at the beginning of the 21st century, an effort was made to
 migrate the data and software to its current implementation as a
 web-based application backed by a powerful database system.  Several
 software development iterations (some still operational on the STEDT
-website and available in GitHub\footnote{https://github.com/stedt-project} ) were developed.   
+website and available in GitHub\footnote{https://github.com/stedt-project}) were developed.   
 The current online application and publication tools are written in
-PERL, using the {\it CGI::Application framework}.\footnote{http://search.cpan.org/~markstos/CGI-Application-4.50/lib/CGI/Application.pm}
+PERL, using the {\it CGI::Application} framework\footnote{http://search.cpan.org/~markstos/CGI-Application-4.50/lib/CGI/Application.pm}
 and run on a so-called ``LAMP stack".\footnote{Linux, Apache, MySQL, Perl.}
 
 Today, the STEDT database is freely searchable by anyone anywhere who has
-an internet connect web browser.\footnote{http://stedt.berkeley.edu/search.}
+an internet connected web browser.\footnote{http://stedt.berkeley.edu/search.}
 In addition, the database itself and
 the software used to create the etymological structure and generate
 the ``final PDF'' is available as opensource software and open data for the world to
@@ -181,16 +181,16 @@ Beside managing the basic data being input, some means of organizing
 it into a semantically-based etymologically-organized whole needed to
 be designed and implemented. 
 
-At first, i.e. for the first couple of decades of the project, the
+At first, i.e.\ for the first couple of decades of the project, the
 database served the needs of the goal of publishing a
 thesaurus. Indeed, to this day, the thesaurus remains the primary
-deliverable -- the database and its {\it accoutrement}s are secondary.
+deliverable---the database and its {\it accoutrement}s are secondary.
 
 Analyzing the tasks, we noted that producing the dictionary entailed completing at least the following
 subtasks:
 \begin{itemize}
 \item  CREATING A DATABASE:  collecting, evaluating, entering, indexing, and ultimately archiving all significant lexical data available on the Sino-Tibetan languages.
-\item  PERFORMING AN ETYMOLOGICAL ANALYSIS OF THE DATA: phonological reconstruction and semantic analysis of the Sino-Tibetan lexicon at various diachronic levels, according to the accepted principles of linguistic reconstruction (i.e. the comparative method).
+\item  PERFORMING AN ETYMOLOGICAL ANALYSIS OF THE DATA: phonological reconstruction and semantic analysis of the Sino-Tibetan lexicon at various diachronic levels, according to the accepted principles of linguistic reconstruction (i.e.\ the comparative method).
 \item  PREPARING THE DATA FOR PUBLICATION: Several access points must be provided both for the initial data analysis and for the final publication.  Extensive supporting material was required in the form of bibliography, explanations of coding conventions and abbreviations, and other front and back matter.
 \item  DISSEMINATING THE RESULTS: the publishing of the physical Etymological Dictionary and
   Thesaurus in two ``tomes".  The promulgation of the database and its
@@ -207,8 +207,8 @@ subtasks:
 \end{figure}
 
 Each of these tasks required a different approach and skillset. Some
-of them (e.g. ``creating a database'') were relatively conventional
-and well-understood, if a bit difficult in implement in the
+of them (e.g.\ ``creating a database'') were relatively conventional
+and well-understood, if a bit difficult to implement in the
 computational milieu at the time.
 
 \subsection{The Invention of ``Tagging"}
@@ -236,9 +236,9 @@ arrangement:
 \item  A variety of other material is interpolated into the flow of the text, including notes at various levels, figures and diagrams, and commentary. In this case, a semantic flowchart has been associated with the chapter 2.1.1, and the supporting forms have two footnotes.
 \item  The ``cognate morpheme", that is, the portion of the transcribed
   lexical item that is deemed to be distinctly related to the etymon,
-  is rendered in boldface -- {\it in the context in which it is cited,
+  is rendered in boldface---{\it in the context in which it is cited,
     it is important to note!}
-\item  Redundant information, e.g. repeated identical glosses, are elided from the display to increase readability and make the very complex display less busy.
+\item  Redundant information, e.g.\ repeated identical glosses, are elided from the display to increase readability and make the very complex display less busy.
 \item  The source of every form cited is included alongside the
 form. This is a novel feature of the D-T.
 \end{itemize}
