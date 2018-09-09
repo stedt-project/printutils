@@ -171,6 +171,7 @@ sub xml2tex { # for the notes
 	s/-+>/\$\\rightarrow\$/g; # convert right arrows
 	s/<-+/\$\\leftarrow\$/g; # convert left arrows
 	s/< /<~/g; # no break after "comes from" sign
+	s/^\\\\{}//; # weird edge case if someone started a note with a line break, which will break tex compiling
 	return $_;
 }
 
