@@ -12,11 +12,11 @@ perl -i -pe 's/\&/\\&/g;' srcbib.csv
 
 #more ad hoc changes for problematic sources --- would be ideal to have makeRefs.pl wrap all characters of the type /(\p{Han}+)/u
 perl -i -pe 's/Lǐ Fànwén 李范文/Lǐ Fànwén \\SC{李范文}/' srcbib.csv
-perl -i -pe 's/《夏漢字典》/\\TC{\1}/' srcbib.csv
+perl -i -pe 's/(《夏漢字典》)/\\TC{\1}/' srcbib.csv
 perl -i -pe 's/上古漢語的N- 和 m- 前綴/\\TC{上古漢語的}N- \\TC{和} m- \\TC{前綴}/' srcbib.csv
-perl -i -pe 's/汉语历史音韵学/\\SC{\1}/' srcbib.csv
-perl -i -pe 's/中国社会科学出版社/\\SC{\1}/' srcbib.csv
-perl -i -pe 's/(《藏缅语音和词汇》)/\\TC{\1}/' srcbib.csv
+perl -i -pe 's/(汉语历史音韵学)/\\SC{\1}/' srcbib.csv
+perl -i -pe 's/(中国社会科学出版社)/\\SC{\1}/' srcbib.csv
+perl -i -pe 's/(《藏缅语语音和词汇》)/\\SC{\1}/' srcbib.csv
 perl -i -pe 's/(《藏緬語族語言詞匯》)/\\TC{\1}/' srcbib.csv
 perl -i -pe 's/North East Frontier Agency \(India\)/NEFA \(India\)/' srcbib.csv
 perl -i -pe 's/卒/\\SC{卒}/' srcbib.csv
